@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        try {
+          var k = "portfolio-ui-theme";
+          var t = localStorage.getItem(k);
+          document.documentElement.classList.toggle("dark", t !== "light");
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-fouad</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

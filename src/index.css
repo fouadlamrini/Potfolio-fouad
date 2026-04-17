@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* —— Light mode (default when .dark absent) —— */
+html {
+  color-scheme: light;
+  --bg-page: #f8fafc;
+  --bg-muted: #f1f5f9;
+  --text-heading: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --border-line: rgba(15, 23, 42, 0.12);
+  --accent-primary: #7c3aed;
+  --accent-secondary: #0d9488;
+  --surface-glass: rgba(15, 23, 42, 0.06);
+  --surface-glass-hover: rgba(15, 23, 42, 0.1);
+  --overlay-backdrop: rgba(15, 23, 42, 0.55);
+  --modal-bg: #ffffff;
+  --hero-btn-bg: #0f172a;
+  --hero-btn-text: #f8fafc;
+  --hero-btn-outline: rgba(15, 23, 42, 0.18);
+  --stack-scrim: rgba(15, 23, 42, 0.65);
+  --stack-scrim-hover: rgba(15, 23, 42, 0.45);
+  --card-tile: rgba(241, 245, 249, 0.85);
+  --outline-stroke: #cbd5e1;
+  --outline-stroke-hover: #7c3aed;
+  --header-bg: rgba(248, 250, 252, 0.82);
+  --card-gradient-from: rgba(248, 250, 252, 0.96);
+  --gradient-name-from: #5b21b6;
+  --gradient-name-to: #0f766e;
+  --selection-bg: #7c3aed;
+  --selection-text: #f8fafc;
+}
+
+/* —— Dark mode (class .dark on <html>) —— Slate-950 base —— */
+html.dark {
+  color-scheme: dark;
+  --bg-page: #020617;
+  --bg-muted: #0f172a;
+  --text-heading: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --border-line: rgba(248, 250, 252, 0.08);
+  --accent-primary: #8b5cf6;
+  --accent-secondary: #06b6d4;
+  --surface-glass: rgba(248, 250, 252, 0.05);
+  --surface-glass-hover: rgba(248, 250, 252, 0.1);
+  --overlay-backdrop: rgba(2, 6, 23, 0.97);
+  --modal-bg: #0c1222;
+  --hero-btn-bg: #f8fafc;
+  --hero-btn-text: #020617;
+  --hero-btn-outline: rgba(248, 250, 252, 0.12);
+  --stack-scrim: rgba(2, 6, 23, 0.72);
+  --stack-scrim-hover: rgba(2, 6, 23, 0.52);
+  --card-tile: rgba(15, 23, 42, 0.5);
+  --outline-stroke: #334155;
+  --outline-stroke-hover: #a78bfa;
+  --header-bg: rgba(2, 6, 23, 0.72);
+  --card-gradient-from: rgba(2, 6, 23, 0.94);
+  --gradient-name-from: #c4b5fd;
+  --gradient-name-to: #22d3ee;
+  --selection-bg: #8b5cf6;
+  --selection-text: #f8fafc;
+}
+
+@theme {
+  --color-dark: var(--bg-page);
+  --color-primary: var(--accent-primary);
+  --color-secondary: var(--accent-secondary);
+}
+
+@layer base {
+  html {
+    transition:
+      background-color 0.35s ease,
+      color 0.35s ease;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-heading);
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    transition:
+      background-color 0.35s ease,
+      color 0.35s ease;
+  }
+
+  ::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
+  }
+}
+
+@layer components {
+  .outline-text {
+    -webkit-text-stroke: 1px var(--outline-stroke);
+    color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .outline-text:hover {
+    -webkit-text-stroke: 1px var(--outline-stroke-hover);
+  }
+
+  .border-theme {
+    border-color: var(--border-line);
+  }
+
+  .bg-glass {
+    background-color: var(--surface-glass);
+  }
+
+  .bg-glass-hover:hover {
+    background-color: var(--surface-glass-hover);
+  }
+
+  .hero-name-gradient {
+    background-image: linear-gradient(
+      90deg,
+      var(--gradient-name-from),
+      var(--gradient-name-to)
+    );
+  }
+}

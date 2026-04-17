@@ -1,0 +1,138 @@
+export const translations = {
+  en: {
+    nav: {
+      about: "About",
+      skills: "Skills",
+      projects: "Projects",
+      journey: "Journey",
+      contact: "Contact",
+    },
+    header: {
+      langBadge: "EN / FR",
+    },
+    hero: {
+      status: "Available for new opportunities",
+      viewProjects: "VIEW PROJECTS",
+      downloadCV: "Download CV",
+    },
+    about: {
+      discovery: "/ Discovery",
+      whoIAm: "WHO I AM",
+      getInTouch: "/ Get In Touch",
+      email: "Email",
+      phone: "Phone",
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      location: "Location",
+      aboutDesc:
+        "Full Stack Developer with strong backend expertise in PHP Laravel and Node.js/Express, specialized in creating secure REST APIs, JWT authentication, and MVC architectures. Proven experience with relational databases (MySQL, PostgreSQL) as well as MongoDB for MERN applications. Excellent problem-solving skills and performance-oriented development approach.",
+    },
+    skills: {
+      title: "/ Skills & Technologies",
+    },
+    projects: {
+      title: "Selected Projects",
+      keyFeatures: "Key Features",
+      viewOnGithub: "VIEW ON GITHUB",
+      mernStack: "MERN Stack",
+      laravelStack: "Laravel Stack",
+      descMarketGames:
+        "Marketplace for virtual assets (8 Ball Pool, Parchisi). Integrated escrow system.",
+      featuresEscrow: "Escrow System",
+      featuresChat: "Live Chat",
+      featuresPayments: "Secure Payments",
+      descEReservation:
+        "Event reservation system with ticket management and calendar.",
+      featuresAuth: "Auth System",
+      featuresDashboard: "Admin Dashboard",
+      featuresQR: "Ticket QR Generation",
+      demoPlaceholder: "[DEMO VIDEO OR IMAGE]",
+      backToStacks: "Back to Stacks",
+      chooseStack: "Choose a stack to explore projects",
+      exploreStack: "Explore projects",
+    },
+    journey: {
+      experience: "/ Experience",
+      education: "/ Education",
+    },
+    footer: {
+      contact: "/ Contact",
+      haveProjectTitle: "Have a project in mind?",
+      haveProjectDesc: "I'm always open to discussing new opportunities, interesting projects, or just a friendly chat about technology. Let's turn your ideas into reality.",
+      letsTalk: "LET'S TALK",
+      emailMe: "Email Me",
+      whatsapp: "WhatsApp",
+      callMe: "Call Me",
+      copyright: "© 2026 F.L — SAFI / MOROCCO",
+      role: "Full Stack Web Developer",
+    },
+  },
+  fr: {
+    nav: {
+      about: "À propos",
+      skills: "Compétences",
+      projects: "Projets",
+      journey: "Parcours",
+      contact: "Contact",
+    },
+    header: {
+      langBadge: "FR / EN",
+    },
+    hero: {
+      status: "Disponible pour de nouvelles opportunités",
+      viewProjects: "VOIR LES PROJETS",
+      downloadCV: "Télécharger CV",
+    },
+    about: {
+      discovery: "/ Découverte",
+      whoIAm: "QUI JE SUIS",
+      getInTouch: "/ Contactez-moi",
+      email: "Email",
+      phone: "Téléphone",
+      linkedin: "LinkedIn",
+      github: "GitHub",
+      location: "Localisation",
+      aboutDesc:
+        "Développeur Full Stack avec une solide expertise backend en PHP Laravel et Node.js/Express, spécialisé dans la création d'API REST sécurisées, l'authentification JWT, et les architectures MVC. Expérience confirmée avec les bases de données relationnelles (MySQL, PostgreSQL) ainsi qu'avec MongoDB pour les applications MERN. excellentes capacités de résolution de problèmes, et approche de développement orientée performance.",
+    },
+    skills: {
+      title: "/ Compétences & Technologies",
+    },
+    projects: {
+      title: "Projets Sélectionnés",
+      keyFeatures: "Fonctionnalités Principales",
+      viewOnGithub: "VOIR SUR GITHUB",
+      mernStack: "MERN Stack",
+      laravelStack: "Laravel Stack",
+      descMarketGames:
+        "Marketplace pour virtual assets (8 Ball Pool, Parchisi). Système d'escrow intégré.",
+      featuresEscrow: "Escrow System",
+      featuresChat: "Live Chat",
+      featuresPayments: "Secure Payments",
+      descEReservation:
+        "Système de réservation d'événements avec gestion de tickets et calendrier.",
+      featuresAuth: "Auth System",
+      featuresDashboard: "Admin Dashboard",
+      featuresQR: "Ticket QR Generation",
+      demoPlaceholder: "[DEMO_VIDEO_OR_IMAGE]",
+      backToStacks: "Retour aux Stacks",
+      chooseStack: "Choisissez un stack pour explorer les projets",
+      exploreStack: "Explorer les projets",
+    },
+    journey: {
+      experience: "/ Expérience",
+      education: "/ Formation",
+    },
+    footer: {
+      contact: "/ Contact",
+      haveProjectTitle: "Un projet en tête ?",
+      haveProjectDesc: "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants, ou simplement d'une conversation amicale sur la technologie. Transformons vos idées en réalité.",
+      letsTalk: "Discutons",
+      emailMe: "Email",
+      whatsapp: "WhatsApp",
+      callMe: "Appelez-moi",
+      copyright: "© 2026 F.L — NADOR / MAROC",
+      role: "Développeur Web Full Stack",
+    },
+  },
+};
