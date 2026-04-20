@@ -100,14 +100,6 @@ export const portfolioData = {
   ],
   cvs: [
     {
-      label: { en: "MERN Stack", fr: "MERN Stack" },
-      file: "/cvs/cv-lamrini-fouad-mern.pdf",
-    },
-    {
-      label: { en: "PHP Laravel", fr: "PHP Laravel" },
-      file: "/cvs/cv-lamrini-fouad-php.pdf",
-    },
-    {
       label: { en: "Full Stack", fr: "Full Stack" },
       file: "/cvs/cv-lamrini-fouad-mix.pdf",
     },
