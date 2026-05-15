@@ -100,7 +100,7 @@ export const portfolioData = {
   ],
   cvs: [
     {
-      label: { en: "Full Stack", fr: "Full Stack" },
+      label: { en: "Full Stackh", fr: "Full Stackh" },
       file: "/cvs/CV-Fouad-Lamrini-Full-Stack-Developer.pdf",
     },
   ],
